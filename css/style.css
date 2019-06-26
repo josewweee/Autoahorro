@@ -168,7 +168,7 @@ section {
 --------------------*/
 
 header {
-    background-image: url(../images/demo/bg-main.jpg);
+    background-image: url(../images/demo/bg-main2.jpg);
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -764,4 +764,133 @@ and (max-width : 480px) {
     margin-top: 7px;
     font-size: 20px;
 }
+}
+
+
+
+/* SELECIONA TU VEHICULO */
+.error {
+    color: #6c7593;
+    border: 1px solid #c7c7c7;
+    padding: 6px 12px;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    margin: 5px 0 15px;
+}
+
+.ftr-right-cnt {
+    background: #fff;
+    padding: 35px 30px;
+    box-shadow: -5px -9px 13px #e7eaf4;
+    position: relative;
+    padding: 35px 15px;
+    z-index: 2;
+}
+
+.main-heading {
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 60px;
+}
+
+.container-fluid{
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 60px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  @media (max-width: 1311px) and (min-width: 1000px){
+    .container-fluid {
+    max-width: 1100px;
+    }
+} */
+
+.ftr-cnt-frm input {
+    font-size: 17px;
+    color: #4d4d4d;
+    height: auto;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 0;
+    margin: 0 10px 0 0;
+}
+
+.ftr-cnt-frm select {
+    color: #6c7593;
+    border: 1px solid #c7c7c7;
+    padding: 6px 12px;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    margin: 5px 0 15px;
+}
+
+.registration-form .form-textarea {
+    margin: 0 0 10px;
+}
+
+.form-textarea label.form-label {
+    display: block;
+}
+
+.form-textarea label {
+    display: inline-block;
+    width: 49%;
+}
+
+.form-textarea .btn-link {
+    cursor: pointer;
+    color: #810c8b;
+    text-decoration: none;
+    display: block;
+}
+
+textarea.form-control {
+    height: auto;
+}
+
+.ftr-btns {
+    margin-top: 38px;
+}
+
+@media (min-width: 768px){
+    .d-md-flex {
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.ftr-left-cnt ul {
+    margin-left: 30px;
+    list-style: none;
+}
+
+.ftr-left-cnt ul li a {
+    font-size: 21px;
+    color: #4d4d4d;
+    padding-left: 15px;
+    display: block;
+}
+
+.imagenCarroSeleccion{
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.btn-style{
+    FONT-SIZE: x-large;
+    color: black;
+    text-decoration: none;
 }
