@@ -513,6 +513,8 @@
 																		oninvalid="this.setCustomValidity('Please select model.')"
 																		oninput="setCustomValidity('')">
 																		<option value="">Modelo</option>
+																		<option value="">AWD</option>
+																		<option value="">FWD Turbo cargado</option>
 																	</select>
 																</div>
 																<div id="trimouter" class="selectionouter">
@@ -521,6 +523,8 @@
 																		oninvalid="this.setCustomValidity('Please select trim.')"
 																		oninput="setCustomValidity('')">
 																		<option value="">Trim</option>
+																		<option value="">Cupe</option>
+																		<option value="">Deportivo</option>
 																	</select>
 																</div>
 															</div>
@@ -534,11 +538,19 @@
 																				oninvalid="this.setCustomValidity('Please select exterior color.')"
 																				oninput="setCustomValidity('')">
 																				<option value="">Color exterior</option>
+																				<option value="">Negro</option>
+																				<option value="">Azul</option>
+																				<option value="">Verde</option>
+																				<option value="">Blanco</option>
 																			</select>
 																		</div>
 																		<div class="col-sm-6">
 																			<select name="colorexterior2" id="colorexterior2">
 																				<option value="">Color exterior (2da opcion)</option>
+																				<option value="">Negro</option>
+																				<option value="">Azul</option>
+																				<option value="">Verde</option>
+																				<option value="">Blanco</option>
 																			</select>
 																		</div>
 																	</div>
@@ -829,8 +841,13 @@
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
 
+		 <!-- FIREBASE SCRIPTS 
+			================================================== -->
+			<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
 		<!-- PERSONALIZED JAVASCRIPT
 			================================================== -->
 		<script src="js/index.js"></script>
+		<script src="js/database.js"></script>
 	</body>
 </html>
