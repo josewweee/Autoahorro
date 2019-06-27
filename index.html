@@ -420,163 +420,326 @@
 					
 				</div>
 			</div> -->
-			
-				<div class="container-fluid">
-				<div class="main-heading text-center">
-				<h2>
-				Selecciona tu vehiculo </h2>
-				<p>
-				Te estamos consiguiendo el mejor precio. </p>
-				</div>
-				<div class="footer-sect-main">
-				<div class="row">
-				<div class="col-md-6">
-				<div class="ftr-left-cnt">
-				
-				<h3> En 24 horas te enviaremos el mejor precio </h3>
-				<p>Danos algo de informacion sobre el vehiculo que deseas </p>
-				<p></p>
-				 <div class="ftr-btns d-md-flex">
-				<a href="tel:(833) 424-3382" class="btn-style my-auto">
-				(350) 532-5406 </a>
-				<ul id="menu-social-menu" class="d-flex my-auto"><li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/autocheetahUSA"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li id="menu-item-69" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCPa6Ks65zxso2uBFHyP1u6A"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-				<li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/autocheetah/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				</ul> </div>
-				</div>
-				<div class="ftr-left-map" style="margin-top: 20px;">
-				 <img class="imagenCarroSeleccion" src="images/carros/camaroSS.webp">
-				</div>
-				</div>
-				<div class="col-md-6">
-				<div class="ftr-right-cnt">
-				<div class="ftr-cnt-frm">
-				<form role="form" method="post" class="registration-form formSeleccionarVehiculo" action="https://autocheetah.com/lease-finance/">
-				<fieldset>
-				<div class="third">
-				<div class="row">
-				<label for="year" class="form-label col-sm-12 col-xs-12">Selecciona tu vehiculo <span style="color:#ff0000;">*</span></label>
-				<div class="col-sm-12 col-xs-12 form-textarea" id="priceselection1"></div>
-				<div class="col-sm-12 col-xs-12">
-				<div class="form-select">
-				<div class="selectionouter">
-				<select name="caryear" id="year" class="error" aria-invalid="true" required="" oninvalid="this.setCustomValidity('Please select year.')" oninput="setCustomValidity('')">
-				<option value="">Tipo vehiculo</option>
-				<option value="Carro">Carro</option>
-				<option value="Moto">Moto</option>
-				</select>
-				</div>
-				<div id="makeouter" class="selectionouter">
-				<select name="make" id="make" class="error" aria-invalid="true" required="" oninvalid="this.setCustomValidity('Please select make.')" oninput="setCustomValidity('')">
-				<option value="">Marca</option>
-				</select>
-				</div>
-				<div id="modelouter" class="selectionouter">
-				<select name="model" id="model" class="error" aria-invalid="true" required="" oninvalid="this.setCustomValidity('Please select model.')" oninput="setCustomValidity('')">
-				<option value="">Modelo</option>
-				</select>
-				</div>
-				<div id="trimouter" class="selectionouter">
-				<select name="trim" id="trim" class="error" aria-invalid="true" required="" oninvalid="this.setCustomValidity('Please select trim.')" oninput="setCustomValidity('')">
-				<option value="">Trim</option>
-				</select>
-				</div>
-				</div>
-				</div>
-				<div class="col-sm-12 col-xs-12">
-				<div id="colorselection" class="selectionouter">
-				<div class="form-group">
-				<div class="row">
-				<div class="col-sm-6">
-				<select name="colorexterior" id="colorexterior" required="" oninvalid="this.setCustomValidity('Please select exterior color.')" oninput="setCustomValidity('')">
-				 <option value="">Color exterior</option>
-				</select>
-				</div>
-				<div class="col-sm-6">
-				<select name="colorexterior2" id="colorexterior2">
-				<option value="">Color exterior (2da opcion)</option>
-				</select>
-				</div>
-				</div>
-				</div>
-				<div class="form-group">
-				<div class="row">
-				<div class="col-sm-6">
-				<select name="colorinterior" id="colorinterior" required="" oninvalid="this.setCustomValidity('Please select interior color.')" oninput="setCustomValidity('')">
-				<option value="">Color interior</option>
-				</select>
-				</div>
-				<div class="col-sm-6">
-				<select name="colorinterior2" id="colorinterior2">
-				<option value="">Color interior (2da opcion)</option>
-				</select>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
-				<div class="col-sm-12 col-xs-12">
-				<div class="form-textarea">
-				<label for="year" class="form-label col-sm-12 col-xs-12">Opciones del vehiculo: <span style="color:#ff0000;"></span></label>
-				<label class="vehi" style=""><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Hard Top">Hard Top</label>
-				<label class="vehi" style=""><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Bed Liner">Bed Liner</label>
-				<label class="vehi" style=""><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Bed Cover">Bed Cover</label>
-				<label class="vehi" style=""><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Manual Transmission">Manual Transmission</label>
-				<label class="vehi" style=""><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Snow / Plow Package">Snow / Plow Package</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Towing / Trailer Package">Towing / Trailer Package</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Diesel">Diesel</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Power Tailgate">Power Tailgate</label>
-				
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Running Boards">Running Boards</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="2nd Row Captains Chairs">2nd Row Captains Chairs</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Rear DVD/TV">Rear DVD/TV</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Luggage/Roof Rack">Luggage/Roof Rack</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Third Row Seats">Third Row Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Dual Air Conditioning">Dual Air Conditioning</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Driver's Power Seat">Driver's Power Seat</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Dual Power Seats">Dual Power Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Air Conditioned Seats">Air Conditioned Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Heated Front Seats">Heated Front Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Heated Rear Seats">Heated Rear Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Navigation System">Navigation System</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Power Sunroof">Power Sunroof</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Panoramic Sunroof">Panoramic Sunroof</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Satellite Radio">Satellite Radio</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Remote Starter">Remote Starter</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Heated Steering Wheel">Heated Steering Wheel</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Heated/Cooled Cup Holders">Heated/Cooled Cup Holders</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="CarPlay">CarPlay</label>
-				
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Massaging Front Seats">Massaging Front Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Massaging Back Seats">Massaging Back Seats</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Lane Keeping Assist">Lane Keeping Assist</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Automatic Braking">Automatic Braking</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Adaptive Cruise Control">Adaptive Cruise Control</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="Automatic High Beams">Automatic High Beams</label>
-				<label class="vehink" style="display:none;"><input type="checkbox" id="vehicle" name="vehiclesoption[]" value="360 Degree Back Up Camera">360 Degree Back Up Camera</label>
-				<span class="btn-link my-auto reply" id="replyb">Expand</span>
-				</div>
-				</div>
-				<div class="col-sm-12 col-xs-12">
-				<div class="form-textarea">
-				<textarea class="form-control" rows="2" id="comment" placeholder="Informacion adicional." name="specialrequestnew"></textarea>
-				</div>
-				</div>
-				<div class="col-md-12">
-				<a href="#team" class="page-scroll btn btn-xl" style="margin-top: 15px;">Continuar <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-				</div>
-				</div>
-				</div>
-				</fieldset>
-				</form>
-				</div>
-			
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
 
+				<div class="container-fluid">
+					<div class="main-heading text-center">
+						<h2>
+							Selecciona tu vehiculo </h2>
+						<p>
+							Te estamos consiguiendo el mejor precio. </p>
+					</div>
+					<div class="footer-sect-main">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="ftr-left-cnt">
+				
+									<h3> En 24 horas te enviaremos el mejor precio </h3>
+									<p>Danos algo de informacion sobre el vehiculo que deseas </p>
+									<p></p>
+									<div class="ftr-btns d-md-flex">
+										<a href="tel:(350) 532-5406" class="btn-style my-auto">
+											(350) 532-5406 </a>
+										<ul id="menu-social-menu" class="d-flex my-auto">
+											<li id="menu-item-67"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-67">
+												<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com">
+													<i class="fa fa-facebook" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li id="menu-item-69"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69">
+												<a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com">
+													<i class="fa fa-youtube" aria-hidden="true"></i>
+												</a>
+											</li>
+											<li id="menu-item-70"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70">
+												<a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
+													<i class="fa fa-instagram" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="ftr-left-map" style="margin-top: 20px;">
+									<img class="imagenCarroSeleccion" src="images/carros/camaroSS.webp">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="ftr-right-cnt">
+									<div class="ftr-cnt-frm">
+										<form role="form" method="GET" class="registration-form formSeleccionarVehiculo" action="" id="datosVehiculo">
+											<fieldset>
+												<div class="third">
+													<div class="row">
+														<label for="year" class="form-label col-sm-12 col-xs-12">Selecciona tu vehiculo
+															<span style="color:#ff0000;">*</span></label>
+														<div class="col-sm-12 col-xs-12 form-textarea" id="priceselection1"></div>
+														<div class="col-sm-12 col-xs-12">
+															<div class="form-select">
+																<div class="selectionouter">
+																	<select name="cartype" id="type" class="error" aria-invalid="true"
+																		required=""
+																		oninvalid="this.setCustomValidity('Please select type.')"
+																		oninput="setCustomValidity('')">
+																		<option value="">Tipo vehiculo</option>
+																		<option value="Carro">Carro</option>
+																		<option value="Moto">Moto</option>
+																	</select>
+																</div>
+																<div id="makeouter" class="selectionouter">
+																	<select name="make" id="make" class="error" aria-invalid="true"
+																		required=""
+																		oninvalid="this.setCustomValidity('Please select make.')"
+																		oninput="setCustomValidity('')">
+																		<option value="">Marca</option>
+																		<option value="Carro">Bmw</option>
+																		<option value="Moto">Audi</option>
+																	</select>
+																</div>
+																<div class="yearouter">
+																		<select name="caryear" id="year" class="error" aria-invalid="true"
+																			required=""
+																			oninvalid="this.setCustomValidity('Please select year.')"
+																			oninput="setCustomValidity('')">
+																			<option value="">Año</option>
+																			<option value="2019">2019</option>
+																			<option value="2018">2018</option>
+																		</select>
+																	</div>
+																<div id="modelouter" class="selectionouter">
+																	<select name="model" id="model" class="error" aria-invalid="true"
+																		required=""
+																		oninvalid="this.setCustomValidity('Please select model.')"
+																		oninput="setCustomValidity('')">
+																		<option value="">Modelo</option>
+																	</select>
+																</div>
+																<div id="trimouter" class="selectionouter">
+																	<select name="trim" id="trim" class="error" aria-invalid="true"
+																		required=""
+																		oninvalid="this.setCustomValidity('Please select trim.')"
+																		oninput="setCustomValidity('')">
+																		<option value="">Trim</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-12 col-xs-12">
+															<div id="colorselection" class="selectionouter">
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<select name="colorexterior" id="colorexterior" required=""
+																				oninvalid="this.setCustomValidity('Please select exterior color.')"
+																				oninput="setCustomValidity('')">
+																				<option value="">Color exterior</option>
+																			</select>
+																		</div>
+																		<div class="col-sm-6">
+																			<select name="colorexterior2" id="colorexterior2">
+																				<option value="">Color exterior (2da opcion)</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+																<div class="form-group">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<select name="colorinterior" id="colorinterior" required=""
+																				oninvalid="this.setCustomValidity('Please select interior color.')"
+																				oninput="setCustomValidity('')">
+																				<option value="">Color interior</option>
+																			</select>
+																		</div>
+																		<div class="col-sm-6">
+																			<select name="colorinterior2" id="colorinterior2">
+																				<option value="">Color interior (2da opcion)</option>
+																			</select>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-sm-12 col-xs-12">
+															<div class="form-textarea">
+																<label for="year" class="form-label col-sm-12 col-xs-12">Opciones del
+																	vehiculo <span style="color:#ff0000;"></span></label>
+																<label class="vehi" style=""><input type="checkbox" id="vehicle"
+																		name="vehiclesoption[]" value="Hard Top">Hard Top</label>
+																<label class="vehi" style=""><input type="checkbox" id="vehicle"
+																		name="vehiclesoption[]" value="Bed Liner">Bed Liner</label>
+																<label class="vehi" style=""><input type="checkbox" id="vehicle"
+																		name="vehiclesoption[]" value="Bed Cover">Bed Cover</label>
+																<label class="vehi" style=""><input type="checkbox" id="vehicle"
+																		name="vehiclesoption[]" value="Manual Transmission">Manual
+																	Transmission</label>
+																<label class="vehi" style=""><input type="checkbox" id="vehicle"
+																		name="vehiclesoption[]" value="Snow / Plow Package">Snow / Plow
+																	Package</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Towing / Trailer Package">Towing / Trailer
+																	Package</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Diesel">Diesel</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Power Tailgate">Power Tailgate</label>
+				
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Running Boards">Running Boards</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="2nd Row Captains Chairs">2nd Row Captains Chairs</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]" value="Rear DVD/TV">Rear
+																	DVD/TV</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Luggage/Roof Rack">Luggage/Roof Rack</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Third Row Seats">Third Row Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Dual Air Conditioning">Dual Air Conditioning</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Driver's Power Seat">Driver's Power Seat</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Dual Power Seats">Dual Power Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Air Conditioned Seats">Air Conditioned Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Heated Front Seats">Heated Front Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Heated Rear Seats">Heated Rear Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Navigation System">Navigation System</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]" value="Power Sunroof">Power
+																	Sunroof</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Panoramic Sunroof">Panoramic Sunroof</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Satellite Radio">Satellite Radio</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Remote Starter">Remote Starter</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Heated Steering Wheel">Heated Steering Wheel</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Heated/Cooled Cup Holders">Heated/Cooled Cup
+																	Holders</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="CarPlay">CarPlay</label>
+				
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Massaging Front Seats">Massaging Front Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Massaging Back Seats">Massaging Back Seats</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Lane Keeping Assist">Lane Keeping Assist</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Automatic Braking">Automatic Braking</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Adaptive Cruise Control">Adaptive Cruise Control</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="Automatic High Beams">Automatic High Beams</label>
+																<label class="vehink" style="display:none;"><input type="checkbox"
+																		id="vehicle" name="vehiclesoption[]"
+																		value="360 Degree Back Up Camera">360 Degree Back Up
+																	Camera</label>
+																<span class="btn-link my-auto reply" id="replyb">Ver Mas</span>
+															</div>
+														</div>
+														<div class="col-sm-12 col-xs-12">
+															<div class="form-textarea">
+																<textarea class="form-control" rows="2" id="comment"
+																	placeholder="Informacion adicional."
+																	name="specialrequestnew"></textarea>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<a href="#team" class="page-scroll btn btn-xl"
+																style="margin-top: 15px;" onclick="OpenPersonalData()">Continuar <i class="fa fa-arrow-circle-right"
+																	aria-hidden="true"></i></a>
+														</div>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+
+										<form role="form" method="GET" class="registration-form formSeleccionarVehiculo" action="" style="display: none;" id="datosPersonales">
+												<fieldset>
+													<div class="third">
+														<div class="row">
+															<label for="year" class="form-label col-sm-12 col-xs-12">Datos Personales
+																<span style="color:#ff0000;">*</span></label>
+															<div class="col-sm-12 col-xs-12 form-textarea" id="priceselection1"></div>
+															<div class="col-sm-12 col-xs-12">
+																<div class="form-select">
+																	<div class="selectionouter">
+																		<input name="name" id="name" class="personalData" aria-invalid="true"
+																			required="" placeholder="Nombre"
+																			oninvalid="this.setCustomValidity('Please select make.')"
+																			oninput="setCustomValidity('')">
+																			
+																		</input>
+																	</div>
+																	<div id="makeouter" class="selectionouter">
+																		<input name="phone" id="phone" class="personalData" aria-invalid="true"
+																			required="" placeholder="Telefono"
+																			oninvalid="this.setCustomValidity('Please select make.')"
+																			oninput="setCustomValidity('')">
+																		</input>
+																	</div>
+																	<div id="modelouter" class="selectionouter">
+																		<input name="email" id="email" class="personalData" aria-invalid="true"
+																			required="" placeholder="Correo electronico"
+																			oninvalid="this.setCustomValidity('Please select model.')"
+																			oninput="setCustomValidity('')">
+																		</input>
+																	</div>
+																</div>
+															</div>
+															
+															
+															<div class="col-md-12">
+																<a href="#team" class="page-scroll btn btn-xl"
+																	style="margin-top: 15px;"> Finalizar <i class="fa fa-arrow-circle-right"
+																		aria-hidden="true"></i></a>
+															</div>
+														</div>
+													</div>
+												</fieldset>
+											</form>
+									</div>
+				
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 		</section>
 		<section id="contact">
 			<div class="container">
@@ -637,7 +800,7 @@
 							<div class="row">
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button type="submit" class="btn">Enviar mensaje</button>
+									<a href="#team" class="page-scroll btn btn-xl" style="margin-top: 15px;">Enviar mensaje <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</form>
@@ -665,5 +828,9 @@
 		<script src="js/theme-scripts.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+		<!-- PERSONALIZED JAVASCRIPT
+			================================================== -->
+		<script src="js/index.js"></script>
 	</body>
 </html>

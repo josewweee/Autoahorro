@@ -818,6 +818,18 @@ and (max-width : 480px) {
     border-bottom: 1px solid #c7c7c7;
     border-radius: 0;
     margin: 0 10px 0 0;
+
+}
+
+.personalData{
+    color: #6c7593 !important;
+    border: 1px solid #c7c7c7 !important;
+    padding: 6px 12px !important;
+    height: 45px !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    margin: 5px 0 15px !important;
+    background-color: #ede9e9 !important;
 }
 
 .ftr-cnt-frm select {
@@ -836,11 +848,13 @@ and (max-width : 480px) {
 
 .form-textarea label.form-label {
     display: block;
+    width: 100% !important;
 }
 
 .form-textarea label {
     display: inline-block;
     width: 49%;
+    margin-bottom: 10px;
 }
 
 .form-textarea .btn-link {
