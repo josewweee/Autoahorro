@@ -104,14 +104,14 @@ section {
 	border-color: rgba(255,255,255,.02)
 }
 .navbar-default .navbar-toggle {
-	background-color: #fed136;
-	border-color: #fed136
+	background-color: #716eb9;
+	border-color: #716eb9
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff
 }
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
-	background-color: #fed136
+	background-color: #716eb9
 }
 .navbar-default .nav li a {
 	font-family: "Roboto",sans-serif;

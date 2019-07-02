@@ -42,7 +42,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo2.png" alt="Auto Ahorro" style="width: 30%;"></a>
+					<a class="navbar-brand page-scroll" href="#page-top" id="hreflogoNavBar"><img src="images/logo2.png" alt="Auto Ahorro" style="width: 30%;" id="logoNavBar"></a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -199,7 +199,7 @@
 				<div class="row">
 					<div class="col-md-4 mb-sm-30">
 						<div class="counter-item">
-							<h2 data-count="24">24</h2>
+							<h2 data-count="24">24hrs</h2>
 							<h6>Servicio al cliente</h6>
 						</div>
 					</div>
@@ -327,25 +327,25 @@
 					<div class="col-lg-12 text-center">
 						<div class="owl-carousel">
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-1.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado1.jpg" alt="partners"></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-2.png" alt="partners"></div>
+								<div class="partner-logo"><img src="" alt=""></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-3.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado2.png" alt="partners"></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-4.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado5.png" alt="partners"></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-5.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado4.png" alt="partners"></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-6.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado6.png" alt="partners"></div>
 							</div>
 							<div class="item">
-								<div class="partner-logo"><img src="images/demo/partners-7.png" alt="partners"></div>
+								<div class="partner-logo"><img src="images/demo/aliado7.png" alt="partners"></div>
 							</div>
 						</div>
 					</div>
@@ -480,7 +480,7 @@
 														<div class="col-sm-12 col-xs-12">
 															<div class="form-select">
 																<div class="selectionouter">
-																	<select name="cartype" id="type" class="error" aria-invalid="true"
+																	<select name="cartype" id="tipo" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select type.')"
 																		oninput="setCustomValidity('')">
@@ -490,7 +490,7 @@
 																	</select>
 																</div>
 																<div id="makeouter" class="selectionouter">
-																	<select name="make" id="make" class="error" aria-invalid="true"
+																	<select name="make" id="marca" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select make.')"
 																		oninput="setCustomValidity('')">
@@ -500,7 +500,7 @@
 																	</select>
 																</div>
 																<div class="yearouter">
-																		<select name="caryear" id="year" class="error" aria-invalid="true"
+																		<select name="caryear" id="año" class="error" aria-invalid="true"
 																			required=""
 																			oninvalid="this.setCustomValidity('Please select year.')"
 																			oninput="setCustomValidity('')">
@@ -510,7 +510,7 @@
 																		</select>
 																	</div>
 																<div id="modelouter" class="selectionouter">
-																	<select name="model" id="model" class="error" aria-invalid="true"
+																	<select name="model" id="modelo" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select model.')"
 																		oninput="setCustomValidity('')">
@@ -564,11 +564,19 @@
 																				oninvalid="this.setCustomValidity('Please select interior color.')"
 																				oninput="setCustomValidity('')">
 																				<option value="">Color interior</option>
+																				<option value="">Beige</option>
+																				<option value="">Rojo</option>
+																				<option value="">Negro</option>
+																				<option value="">Blanco</option>
 																			</select>
 																		</div>
 																		<div class="col-sm-6">
 																			<select name="colorinterior2" id="colorinterior2">
 																				<option value="">Color interior (2da opcion)</option>
+																				<option value="">Beige</option>
+																				<option value="">Rojo</option>
+																				<option value="">Negro</option>
+																				<option value="">Blanco</option>
 																			</select>
 																		</div>
 																	</div>
@@ -703,6 +711,10 @@
 											</fieldset>
 										</form>
 
+
+<!-- _______________________________________________DATOS PERSONALES DEL USUARIO______________________________________ -->
+
+
 										<form role="form" method="GET" class="registration-form formSeleccionarVehiculo" action="" style="display: none;" id="datosPersonales">
 												<fieldset>
 													<div class="third">
@@ -713,7 +725,7 @@
 															<div class="col-sm-12 col-xs-12">
 																<div class="form-select">
 																	<div class="selectionouter">
-																		<input name="name" id="name" class="personalData" aria-invalid="true"
+																		<input name="name" id="nombre" class="personalData" aria-invalid="true"
 																			required="" placeholder="Nombre"
 																			oninvalid="this.setCustomValidity('Please select make.')"
 																			oninput="setCustomValidity('')">
@@ -721,14 +733,14 @@
 																		</input>
 																	</div>
 																	<div id="makeouter" class="selectionouter">
-																		<input name="phone" id="phone" class="personalData" aria-invalid="true"
+																		<input name="phone" id="telefono" class="personalData" aria-invalid="true"
 																			required="" placeholder="Telefono"
 																			oninvalid="this.setCustomValidity('Please select make.')"
 																			oninput="setCustomValidity('')">
 																		</input>
 																	</div>
 																	<div id="modelouter" class="selectionouter">
-																		<input name="email" id="email" class="personalData" aria-invalid="true"
+																		<input name="email" id="correo" class="personalData" aria-invalid="true"
 																			required="" placeholder="Correo electronico"
 																			oninvalid="this.setCustomValidity('Please select model.')"
 																			oninput="setCustomValidity('')">
@@ -739,9 +751,9 @@
 															
 															
 															<div class="col-md-12">
-																<a href="confirmacion.html" class="page-scroll btn btn-xl"
-																	style="margin-top: 15px;"> Finalizar <i class="fa fa-arrow-circle-right"
-																		aria-hidden="true"></i></a>
+																<a class="page-scroll btn btn-xl"
+																	style="margin-top: 15px;" onclick="DatosUsuarioBaseDatos()"> Finalizar <i class="fa fa-arrow-circle-right"
+																		aria-hidden="true" ></i></a>
 															</div>
 														</div>
 													</div>
@@ -843,13 +855,18 @@
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="js/ie10-viewport-bug-workaround.js"></script>
 
-		 <!-- FIREBASE SCRIPTS 
+	  <!-- FIREBASE SCRIPTS 
 			================================================== -->
-			<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+
 
 		<!-- PERSONALIZED JAVASCRIPT
 			================================================== -->
-		<script src="js/index.js"></script>
 		<script src="js/database.js"></script>
+		<script src="js/index.js"></script>
+		
 	</body>
 </html>
