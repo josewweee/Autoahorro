@@ -39,6 +39,8 @@ Import Google Fonts
 body {
   margin: 0px;
     font-family: "Open Sans", Sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1,
@@ -559,6 +561,12 @@ figure.effect-bubba:hover p {
     font-weight: 300;
     color: #9C9C9C;
     padding: 5px 10px 20px 10px;
+}
+
+@media (max-width: 415px){
+    .tituloEscogerModelo{
+        text-align: center;
+    }
 }
 
 /*--------------------

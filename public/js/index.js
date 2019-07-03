@@ -120,7 +120,7 @@ function DatosUsuarioBaseDatos(){
 }
 
 
-//MOVEMOS EL TAMAÑO DEL LOGO DEL NAV BAR SI ESTAMOS EN MOVIL
+//MOVEMOS EL TAMAÑO DEL LOGO DEL NAV BAR Y OTRAS COSAS SI ESTAMOS EN MOVIL
 
 var isMobile = false;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -132,6 +132,12 @@ if(isMobile){
 
     var a_logoNavBar = document.getElementById("hreflogoNavBar");
     a_logoNavBar.style.cssFloat = 'initial';
+
+    var textoTitulo = document.getElementById("textoTitulo");
+    textoTitulo.style.margin = 'auto';
+
+    var textoTitulo = document.getElementById("textoConcesionarios");
+    textoTitulo.style.margin = 'auto';
 }
 
 

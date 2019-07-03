@@ -27,11 +27,15 @@ baseDeDatos.on('value', function(snapshot) {
 var isMobile = false;
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     isMobile = true;
-   }
+}
+
+console.log(isMobile);
 if(isMobile){
+    console.log("mobil");
     var divInstrucciones = document.getElementById("DIV_50");
     divInstrucciones.style.display = 'inline-table';
+    divInstrucciones.style.marginLeft = '21px';
 
     var divEspecificaciones = document.getElementById("DIV_1");
-    divEspecificaciones.style.marginTop = '50px';
+    divEspecificaciones.style.marginTop = '100px';
 }
