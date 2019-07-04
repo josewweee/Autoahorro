@@ -152,8 +152,12 @@ if(isMobile){
     var textoTitulo = document.getElementById("textoTitulo");
     textoTitulo.style.margin = 'auto';
 
-    var textoTitulo = document.getElementById("textoConcesionarios");
-    textoTitulo.style.margin = 'auto';
+    var textoConcesionarios = document.getElementById("textoConcesionarios");
+    textoConcesionarios.style.margin = 'auto';
+    
+    var imagenLogo = document.getElementById("imagenLogo");
+    imagenLogo.style.marginTop = '0px';
+
 }
 
 // FILTRAMOS LA SELECCION DE VEHICULOS DEPENDIENDO DE SU CATEGORIA
