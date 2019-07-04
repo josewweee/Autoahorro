@@ -170,7 +170,7 @@ section {
 --------------------*/
 
 header {
-    background-image: url(../images/demo/bg-main2.jpg);
+   /*  background-image: url(../images/demo/bg-main2.jpg); */
     background-repeat: none;
     background-attachment: scroll;
     background-position: center center;
@@ -179,7 +179,8 @@ header {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    color: #fff;
+   /*  color: #fff; */
+   color: #000;
 }
 
 header .intro-text {
@@ -190,7 +191,7 @@ header .intro-text {
 @media (min-width: 768px) {
 	header .intro-text {
 	    padding-top: 300px;
-	    padding-bottom: 200px;
+	   /*  padding-bottom: 200px; */
 	}
 }
 
@@ -200,6 +201,12 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .intro-lead-in{
+        margin-top: 50px;
+    }
 }
 
 @media (min-width: 768px) {

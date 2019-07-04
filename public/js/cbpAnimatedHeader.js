@@ -15,16 +15,16 @@ var cbpAnimatedHeader = (function() {
 		didScroll = false,
 		changeHeaderOn = 300;
 
-	function init() {
+	/* function init() {
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
 				setTimeout( scrollPage, 250 );
 			}
 		}, false );
-	}
+	} */
 
-	function scrollPage() {
+	/* function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			$('.navbar').addClass('navbar-shrink');
@@ -33,12 +33,12 @@ var cbpAnimatedHeader = (function() {
 			$('.navbar').removeClass('navbar-shrink');
 		}
 		didScroll = false;
-	}
+	} */
 
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
 	}
 
-	init();
+	/* init(); */
 
 })();
