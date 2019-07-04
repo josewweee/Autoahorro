@@ -51,21 +51,24 @@ h5,
 h6 {
 font-weight: 300;
     letter-spacing: 0.4px;
-    font-family: "Open Sans", Sans-serif;
+    /* font-family: "Open Sans", Sans-serif; */
     color: #232323;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 15px;
     font-weight: 300;
 	line-height: 23px;
     letter-spacing: 0.2px;
     color: #797979;
+    font-family: 'Poppins', sans-serif;
 }
 
 a:hover, a:focus, a:active, a.active {
     color: #fec503;
+    font-family: 'Poppins', sans-serif !important;
 }
 a, a:hover, a:focus, a:active, a.active {
     outline: 0;
@@ -116,7 +119,8 @@ section {
 	background-color: #716eb9
 }
 .navbar-default .nav li a {
-	font-family: "Roboto",sans-serif;
+    /* font-family: "Roboto",sans-serif; */
+    font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -723,7 +727,8 @@ font-size: 11px;
     color: #fff;
      background-color: #726FB9;
     border-color: #726FB9;
-    font-family: "Robot",sans-serif;
+    /* font-family: "Robot",sans-serif; */
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 3px;
