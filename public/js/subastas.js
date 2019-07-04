@@ -5,6 +5,7 @@ var baseDeDatos = firebase.database().ref('CLIENTES');
 
 this.VerCarros();
 
+//VEMOS TODOS LOS CARROS DE LA BASE DE DATOS Y CAMBIAMOS EL HTML
 function VerCarros(){
     baseDeDatos.on('value', function(snapshot) {
         datos = snapshot.val();
@@ -98,7 +99,7 @@ function VerCarros(){
 }
 
 
-
+//PASAMOS EL HTML A MOTOS Y FILTRAMOS LOS VEHICULOS
 function VerMotos(){
     baseDeDatos.on('value', function(snapshot) {
         datos = snapshot.val();
@@ -190,6 +191,8 @@ function VerMotos(){
     });
 }
 
+
+//ACA REVISAMOS QUE LA PUJA SEA MAYOR Y LA ENVIAMOS A LA BASE DE DATOS
 function RevisarPuja(key,i){
     var valorPuja = document.getElementById("valorPuja"+i).value;
     valorPuja = Number(valorPuja);
@@ -210,3 +213,13 @@ function EnviarValorPuja(key, valorPuja){
     });
 }
 
+//MOVEMOS EL TAMAÑO DEL LOGO DEL NAV BAR Y OTRAS COSAS SI ESTAMOS EN MOVIL
+
+var isMobile = false;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    isMobile = true;
+   }
+if(isMobile){
+    var logoNavBar = document.getElementById("logoNavBar");
+    logoNavBar.style.margin = '10px';
+}

@@ -38,4 +38,7 @@ if(isMobile){
 
     var divEspecificaciones = document.getElementById("DIV_1");
     divEspecificaciones.style.marginTop = '100px';
+
+    var logoNavBar = document.getElementById("logoNavBar");
+    logoNavBar.style.margin = '10px';
 }
