@@ -532,6 +532,14 @@
 																		<option value="">Deportivo</option> -->
 																	</select>
 																</div>
+																<div class="transmisionrouter">
+																		<select name="cartransmision" id="transmision" class="error" aria-invalid="true"
+																			required=""
+																			oninvalid="this.setCustomValidity('Please select transmision.')"
+																			oninput="filtrarTipos('transmision')">
+																			<option value="">Transmision</option>
+																		</select>
+																</div>
 															</div>
 														</div>
 														<div class="col-sm-12 col-xs-12">
@@ -542,7 +550,7 @@
 																			<select name="colorexterior" id="colorexterior" required=""
 																				oninvalid="this.setCustomValidity('Please select exterior color.')"
 																				oninput="filtrarTipos('colorexterior')">
-																				<option value="">Color exterior</option>
+																				<option value="">Color Exterior</option>
 																				<!-- <option value="">Negro</option>
 																				<option value="">Azul</option>
 																				<option value="">Verde</option>
@@ -551,11 +559,11 @@
 																		</div>
 																		<div class="col-sm-6">
 																			<select name="colorexterior2" id="colorexterior2">
-																				<option value="">Color exterior (2da opcion)</option>
-																				<option value="">Negro</option>
+																				<option value="">Color Exterior (2da opcion)</option>
+																				<!-- <option value="">Negro</option>
 																				<option value="">Azul</option>
 																				<option value="">Verde</option>
-																				<option value="">Blanco</option>
+																				<option value="">Blanco</option> -->
 																			</select>
 																		</div>
 																	</div>
@@ -565,21 +573,21 @@
 																		<div class="col-sm-6">
 																			<select name="colorinterior" id="colorinterior" required=""
 																				oninvalid="this.setCustomValidity('Please select interior color.')"
-																				oninput="filtrarTipos('colorinterior')">
-																				<option value="">Color interior</option>
-																				<option value="">Beige</option>
+																				oninput="">
+																				<option value="">Color Interior</option>
+																				<!-- <option value="">Beige</option>
 																				<option value="">Rojo</option>
 																				<option value="">Negro</option>
-																				<option value="">Blanco</option>
+																				<option value="">Blanco</option> -->
 																			</select>
 																		</div>
 																		<div class="col-sm-6">
 																			<select name="colorinterior2" id="colorinterior2">
-																				<option value="">Color interior (2da opcion)</option>
-																				<option value="">Beige</option>
+																				<option value="">Color Interior (2da opcion)</option>
+																				<!-- <option value="">Beige</option>
 																				<option value="">Rojo</option>
 																				<option value="">Negro</option>
-																				<option value="">Blanco</option>
+																				<option value="">Blanco</option> -->
 																			</select>
 																		</div>
 																	</div>
@@ -748,6 +756,13 @@
 																			oninvalid="this.setCustomValidity('Please select model.')"
 																			oninput="setCustomValidity('')">
 																		</input>
+																	</div>
+																	<div id="modelouter" class="selectionouter">
+																			<input name="ciudad" id="ciudad" class="personalData" aria-invalid="true"
+																				required="" placeholder="Ciudad"
+																				oninvalid="this.setCustomValidity('Please select ciudad.')"
+																				oninput="setCustomValidity('')">
+																			</input>
 																	</div>
 																</div>
 															</div>

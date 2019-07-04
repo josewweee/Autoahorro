@@ -23,7 +23,7 @@ function VerCarros(){
                             +    '<kbd class="text-white mb-4" >05/06/2019 - 12:00</kbd>'
                             + '</div>'
                             + '<div class="col-md-6 border-right">'
-                            +    '<h5 class="text-uppercase text-primary ">'+arregloDatos[i].datos.ciudad+ ', '+arregloDatos[i].datos.barrio+'</h5>'
+                            +    '<h5 class="text-uppercase text-primary ">'+arregloDatos[i].datos.ciudad+'</h5>'
                             +    '<p>'+arregloDatos[i].datos.trim + ', '+arregloDatos[i].datos.año+', '+arregloDatos[i].datos.colorexterior+'</p>'
                            
                             +    '<button type="button" class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#demo'+i+'">Ver Mas Especificaciones</button>'
@@ -80,11 +80,11 @@ function VerCarros(){
                             + '</div>'
                             + '<div class="col-md-3">'
                             +    '<div class="form-group border border-warning">'
-                            +        '<input type="text" id="valorPuja" class="form-control" placeholder="Tu Valor De Venta">'
+                            +        '<input type="text" id="valorPuja'+i+'" class="form-control" placeholder="Tu Valor De Venta">'
                             +   ' </div>'
                             +    '<h3>'+Number(arregloDatos[i].datos.precio).toLocaleString('es', {useGrouping:true})+'</h3>'
                             +    '<div class="sub-row">'
-                            +        '<button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Aceptar</button>'
+                            +        '<button type="button" class="btn btn-success" onclick="RevisarPuja('+"'"+arregloDatos[i].id+"'"+','+i+')"><i class="fa fa-check"></i> Aceptar</button>'
                             +    '</div>'
                     + '</div>'
                     + '</div>'
@@ -106,7 +106,6 @@ function VerMotos(){
         arregloDatos = arregloDatos.filter(pedido => pedido.datos.tipo == "Moto");
         htmlCarros.innerHTML = '';
         for(var i=0; i < arregloDatos.length; i++){
-            console.log(arregloDatos);
             htmlCarros.innerHTML += '<div class="row  text-center">'
             + '<div class="col-md-12">'
                +' <div class="card shadow">'
@@ -174,11 +173,11 @@ function VerMotos(){
                             + '</div>'
                             + '<div class="col-md-3">'
                             +    '<div class="form-group border border-warning">'
-                            +        '<input type="text" id="valorPuja" class="form-control" placeholder="Tu Valor De Venta">'
+                            +        '<input type="text" id="valorPuja'+i+'" class="form-control" placeholder="Tu Valor De Venta">'
                             +   ' </div>'
                             +    '<h3>'+Number(arregloDatos[i].datos.precio).toLocaleString('es', {useGrouping:true})+'</h3>'
                             +    '<div class="sub-row">'
-                            +        '<button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Aceptar</button>'
+                            +        '<button type="button" class="btn btn-success" onclick="RevisarPuja('+"'"+arregloDatos[i].id+"'"+','+i+')"><i class="fa fa-check"></i> Aceptar</button>'
                             +    '</div>'
                     + '</div>'
                     + '</div>'
@@ -191,24 +190,23 @@ function VerMotos(){
     });
 }
 
-function RevisarPuja(key){
-    var valorPuja = document.getElementById("valorPuja");
+function RevisarPuja(key,i){
+    var valorPuja = document.getElementById("valorPuja"+i).value;
     valorPuja = Number(valorPuja);
-
     var rutaDb = firebase.database().ref('CLIENTES').child(key);
     rutaDb.on('value', function(snapshot) {
         info = snapshot.val();
         var MaximaPuja = Number(info.datos.precio);
-        if(valorPuja > MaximaPuja){
+        if(valorPuja < MaximaPuja){
             EnviarValorPuja(key, valorPuja);
         }
     });  
 }
 
 function EnviarValorPuja(key, valorPuja){
-    var rutaDb = firebase.database().ref('CLIENTES').child(key).child('datos/precio');
-    rutaDb.set({
-        valorPuja
+    var rutaDb = firebase.database().ref('CLIENTES').child(key).child('datos');
+    rutaDb.update({
+        precio: valorPuja
     });
 }
 
