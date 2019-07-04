@@ -73,7 +73,7 @@
 			<div class="container">
 				<div class="slider-container">
 					<div class="intro-text">
-						<div class="intro-lead-in">La plataforma donde encontraras los vehiuclos mas baratos de colombia</div>
+						<div class="intro-lead-in">La plataforma donde encontraras los vehiculos mas baratos de Colombia</div>
 						<div class="intro-heading">¿Que esperas?</div>
 						<a href="#team" class="page-scroll btn btn-xl">Comienza ahora</a>
 					</div>
@@ -486,50 +486,50 @@
 																	<select name="cartype" id="tipo" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select type.')"
-																		oninput="setCustomValidity('')">
+																		oninput="filtrarTipos('tipo')">
 																		<option value="">Tipo vehiculo</option>
-																		<option value="Carro">Carro</option>
-																		<option value="Moto">Moto</option>
+																		<option value="carro">Carro</option>
+																		<option value="moto">Moto</option>
 																	</select>
 																</div>
 																<div id="makeouter" class="selectionouter">
 																	<select name="make" id="marca" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select make.')"
-																		oninput="setCustomValidity('')">
+																		oninput="filtrarTipos('marca')">
 																		<option value="">Marca</option>
-																		<option value="Carro">Bmw</option>
-																		<option value="Moto">Audi</option>
+																<!-- 	<option value="Bmw">Bmw</option>
+																		<option value="Toyota">Toyota</option> -->
 																	</select>
+																</div>
+																<div id="modelouter" class="selectionouter">
+																		<select name="model" id="modelo" class="error" aria-invalid="true"
+																			required=""
+																			oninvalid="this.setCustomValidity('Please select model.')"
+																			oninput="filtrarTipos('modelo')">
+																			<option value="">Modelo</option>
+																			<!-- <option value="">AWD</option>
+																			<option value="">FWD Turbo cargado</option> -->
+																		</select>
 																</div>
 																<div class="yearouter">
 																		<select name="caryear" id="año" class="error" aria-invalid="true"
 																			required=""
 																			oninvalid="this.setCustomValidity('Please select year.')"
-																			oninput="setCustomValidity('')">
+																			oninput="filtrarTipos('año')">
 																			<option value="">Año</option>
-																			<option value="2019">2019</option>
-																			<option value="2018">2018</option>
+																			<!-- <option value="2019">2019</option>
+																			<option value="2018">2018</option> -->
 																		</select>
-																	</div>
-																<div id="modelouter" class="selectionouter">
-																	<select name="model" id="modelo" class="error" aria-invalid="true"
-																		required=""
-																		oninvalid="this.setCustomValidity('Please select model.')"
-																		oninput="setCustomValidity('')">
-																		<option value="">Modelo</option>
-																		<option value="">AWD</option>
-																		<option value="">FWD Turbo cargado</option>
-																	</select>
 																</div>
 																<div id="trimouter" class="selectionouter">
 																	<select name="trim" id="trim" class="error" aria-invalid="true"
 																		required=""
 																		oninvalid="this.setCustomValidity('Please select trim.')"
-																		oninput="setCustomValidity('')">
+																		oninput="filtrarTipos('trim')">
 																		<option value="">Trim</option>
-																		<option value="">Cupe</option>
-																		<option value="">Deportivo</option>
+																		<!-- <option value="">Cupe</option>
+																		<option value="">Deportivo</option> -->
 																	</select>
 																</div>
 															</div>
@@ -541,12 +541,12 @@
 																		<div class="col-sm-6">
 																			<select name="colorexterior" id="colorexterior" required=""
 																				oninvalid="this.setCustomValidity('Please select exterior color.')"
-																				oninput="setCustomValidity('')">
+																				oninput="filtrarTipos('colorexterior')">
 																				<option value="">Color exterior</option>
-																				<option value="">Negro</option>
+																				<!-- <option value="">Negro</option>
 																				<option value="">Azul</option>
 																				<option value="">Verde</option>
-																				<option value="">Blanco</option>
+																				<option value="">Blanco</option> -->
 																			</select>
 																		</div>
 																		<div class="col-sm-6">
@@ -565,7 +565,7 @@
 																		<div class="col-sm-6">
 																			<select name="colorinterior" id="colorinterior" required=""
 																				oninvalid="this.setCustomValidity('Please select interior color.')"
-																				oninput="setCustomValidity('')">
+																				oninput="filtrarTipos('colorinterior')">
 																				<option value="">Color interior</option>
 																				<option value="">Beige</option>
 																				<option value="">Rojo</option>

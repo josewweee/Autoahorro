@@ -27,7 +27,10 @@ var datos = {
     apellido: '',
     correo: '',
     telefono: '',
-    foto: ''
+    foto: '',
+    barrio: '',
+    hora: '',
+    precio: ''
 }; 
 
 function DatosVehiculoBaseDatos(){
@@ -138,6 +141,81 @@ if(isMobile){
 
     var textoTitulo = document.getElementById("textoConcesionarios");
     textoTitulo.style.margin = 'auto';
+}
+
+// FILTRAMOS LA SELECCION DE VEHICULOS DEPENDIENDO DE SU CATEGORIA
+var arregloVehiculos;
+function filtrarTipos(tipo){
+   switch (tipo.toString()) {
+       case 'tipo':
+            var selecHTML = document.getElementById(tipo);
+            var opcionSeleccionada = selecHTML.options[selecHTML.selectedIndex].value;
+            var refTipo = firebase.database().ref("VEHICULOS");
+            var htmlMarca = document.getElementById('marca');
+            var marcasNoRepetidas;
+            if(opcionSeleccionada == 'carro'){
+                refTipo.child('CARROS').on('value', function(snapshot){
+                    this.arregloVehiculos = Object.values(snapshot.val());
+                    //eliminamos los repetidos y los ponemos en 1 arreglo
+                    htmlMarca.innerHTML = '<option value="">Marca</option>';
+                    for(var i=0; i<this.arregloVehiculos.length;i++){
+                        htmlMarca.innerHTML += '<option value="'+this.arregloVehiculos[i].marca+'">'+this.arregloVehiculos[i].marca+'</option>';
+                    }
+                });
+            }else if (opcionSeleccionada == 'moto'){
+                var htmlMarca = document.getElementById('marca');
+                refTipo.child('MOTOS').on('value', function(snapshot){
+                    this.arregloVehiculos = Object.values(snapshot.val());
+                    //eliminamos los repetidos y los ponemos en 1 arreglo
+                    htmlMarca.innerHTML = '<option value="">Marca</option>';
+                    for(var i=0; i<this.arregloVehiculos.length;i++){
+                        htmlMarca.innerHTML += '<option value="'+this.arregloVehiculos[i].marca+'">'+this.arregloVehiculos[i].marca+'</option>';
+                    }
+                });
+            }
+           break;
+        case 'marca':
+                var selecHTML = document.getElementById(tipo);
+                var opcionSeleccionada = (selecHTML.options[selecHTML.selectedIndex].value).toString();
+                var arregloMarca = this.arregloVehiculos.filter(objeto => objeto.marca == opcionSeleccionada);
+                var htmlModelo = document.getElementById('modelo');
+                for(var i=0; i<arregloMarca.length;i++){
+                    htmlModelo.innerHTML += '<option value="'+arregloMarca[i].modelo+'">'+arregloMarca[i].modelo+'</option>';
+                }
+            break;
+        case 'modelo':
+                var selecHTML = document.getElementById(tipo);
+                var opcionSeleccionada = (selecHTML.options[selecHTML.selectedIndex].value).toString();
+                var arregloModelos = this.arregloVehiculos.filter(objeto => objeto.modelo == opcionSeleccionada);
+                var htmlAño = document.getElementById('año');
+                for(var i=0; i<arregloModelos.length;i++){
+                    htmlAño.innerHTML += '<option value="'+arregloModelos[i].año.toString()+'">'+arregloModelos[i].año.toString()+'</option>';
+                }
+                break;
+        case 'año':
+                var selecHTML = document.getElementById(tipo);
+                var opcionSeleccionada = (selecHTML.options[selecHTML.selectedIndex].value).toString();
+                var arregloAño = this.arregloVehiculos.filter(objeto => objeto.año == opcionSeleccionada);
+                var htmlTrim = document.getElementById('trim');
+                for(var i=0; i<arregloAño.length;i++){
+                    htmlTrim.innerHTML += '<option value="'+arregloAño[i].trim.toString()+'">'+arregloAño[i].trim.toString()+'</option>';
+                }
+                break;
+        case 'trim':
+                var selecHTML = document.getElementById(tipo);
+                var opcionSeleccionada = (selecHTML.options[selecHTML.selectedIndex].value).toString();
+                var arregloTrim = this.arregloVehiculos.filter(objeto => objeto.trim == opcionSeleccionada);
+                var htmlColorExterior = document.getElementById('colorexterior');
+                for(var i=0; i<arregloTrim.length;i++){
+                    var arregloColores = Object.values(arregloTrim[i].colorexterior);
+                    for(var j=0;j<arregloColores.length;j++){
+                        htmlColorExterior.innerHTML += '<option value="'+arregloColores[j].color+'">'+arregloColores[j].color+'</option>';
+                    }
+                }
+                break;            
+       default:
+           break;
+   }
 }
 
 
