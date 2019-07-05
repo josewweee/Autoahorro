@@ -222,4 +222,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 if(isMobile){
     var logoNavBar = document.getElementById("logoNavBar");
     logoNavBar.style.margin = '10px';
+
+    var a_logoNavBar = document.getElementById("hreflogoNavBar");
+    a_logoNavBar.style.cssFloat = 'initial';
 }

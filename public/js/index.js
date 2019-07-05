@@ -155,8 +155,8 @@ if(isMobile){
     var textoConcesionarios = document.getElementById("textoConcesionarios");
     textoConcesionarios.style.margin = 'auto';
     
-    var imagenLogo = document.getElementById("imagenLogo");
-    imagenLogo.style.marginTop = '0px';
+    var contenedorNavBar = document.getElementById("contenedorNavBar");
+    contenedorNavBar.style.marginTop = '0px';
 
 }
 
