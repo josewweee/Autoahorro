@@ -161,7 +161,7 @@ section {
 		border-radius: 3px
 	}
 	.navbar-default.navbar-shrink {
-		background-color: #222;
+		background-color: #0b3c5d;
 		padding: 10px 0
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
@@ -239,6 +239,10 @@ header .intro-text .intro-heading {
 	    line-height: 75px;
 	    margin-bottom: 50px;
 	}
+}
+
+.botonHeader{
+    border-radius: 30px;
 }
 
 /*--------------------
@@ -725,13 +729,14 @@ font-size: 11px;
 
 .btn-xl {
     color: #fff;
-     background-color: #726FB9;
-    border-color: #726FB9;
+     background-color: #328cc1;
+    border-color: #328cc1;
     /* font-family: "Robot",sans-serif; */
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    border-radius: 3px;
+    /* border-radius: 3px; */
+    border-radius: 30px;
     font-size: 18px;
     padding: 20px 40px;
 }
