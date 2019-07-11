@@ -245,6 +245,12 @@
     outline: rgb(52, 52, 52) none 0px;
 }/*#DIV_5:before*/
 
+@media (min-width: 768px){
+    #DIV_5{
+        margin-top: 250px
+    }
+}
+
 
 #DIV_6 {
     box-sizing: border-box;
