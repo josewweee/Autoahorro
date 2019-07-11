@@ -94,7 +94,7 @@ section {
 --------------------*/
 
 .navbar-default {
-	background-color: #222;
+	background-color: #0b3c5d;
 	border-color: transparent
 }
 .navbar-default .navbar-brand {
@@ -167,6 +167,12 @@ section {
 	.navbar-default.navbar-shrink .navbar-brand {
 		font-size: 1.5em
 	}
+}
+
+@media (min-width: 768px){
+    .barraTextosNavBar{
+        margin-top: 40px;
+    }
 }
 
 /*--------------------
@@ -627,7 +633,7 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 footer {
     padding: 30px;
-    background-color: #000;    
+    background-color: #0b3c5d;    
 }
 
 footer p {

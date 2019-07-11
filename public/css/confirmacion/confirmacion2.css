@@ -245,6 +245,7 @@
     outline: rgb(52, 52, 52) none 0px;
 }/*#DIV_5:before*/
 
+
 #DIV_6 {
     box-sizing: border-box;
     color: rgb(52, 52, 52);
@@ -285,6 +286,17 @@
     font: normal normal 400 normal 16px / 22px "Aktiv Grotesk", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     outline: rgb(52, 52, 52) none 0px;
 }/*#DIV_6:before*/
+
+
+@media (max-width: 768px){
+    #DIV_6{
+        text-align: center;
+    }
+
+    #DIV_5{
+        margin-top: 50px;
+    }
+}
 
 #H1_7 {
     box-sizing: border-box;
@@ -2473,7 +2485,14 @@
     margin-bottom: 10%;
 }/*#DIV_56, #DIV_60, #DIV_64*/
 
-@media (max-width: 415px){
+@media (min-width: 360px) and (max-width: 415px){
+    #DIV_56, #DIV_60, #DIV_64 {
+        padding-right: 0;
+        margin-bottom: 30%;
+    }
+}
+
+@media (max-width: 359px){
     #DIV_56, #DIV_60, #DIV_64 {
         padding-right: 0;
         margin-bottom: 50%;
