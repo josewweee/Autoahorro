@@ -27,7 +27,7 @@ function VerCarros(){
                             +    '<h5 class="text-uppercase text-primary ">'+arregloDatos[i].datos.ciudad+'</h5>'
                             +    '<p>'+arregloDatos[i].datos.trim + ', '+arregloDatos[i].datos.año+', '+arregloDatos[i].datos.colorexterior+'</p>'
                            
-                            +    '<button type="button" class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#demo'+i+'">Ver Mas Especificaciones</button>'
+                            +    '<button type="button" class="btn btn-outline-primary btn-sm" data-toggle="collapse" data-target="#demo'+i+'">Ver Más Especificaciones</button>'
                             + '<div id="demo'+i+'" class="collapse">'
                             +    '<h2 class="title">Especificaciones</h2>'
                             +        '<div class="row" style="text-align: left;">'

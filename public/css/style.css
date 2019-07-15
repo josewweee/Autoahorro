@@ -94,7 +94,7 @@ section {
 --------------------*/
 
 .navbar-default {
-	background-color: #0b3c5d;
+	background-color: #5ab9ea;
 	border-color: transparent
 }
 .navbar-default .navbar-brand {
@@ -161,7 +161,7 @@ section {
 		border-radius: 3px
 	}
 	.navbar-default.navbar-shrink {
-		background-color: #0b3c5d;
+        background-color: #5ab9ea;
 		padding: 10px 0
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
@@ -189,7 +189,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     text-align: center;
-   /*  color: #fff; */
+    background-color: #84ceeb;
    color: #000;
 }
 
@@ -206,8 +206,10 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    font-family: "Playfair Display",sans-serif;
-    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-style: unset;
+    font-weight: 500;
+    color: #232323;
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 25px;
@@ -221,8 +223,10 @@ header .intro-text .intro-lead-in {
 
 @media (min-width: 768px) {
 	header .intro-text .intro-lead-in {
-	    font-family: "Playfair Display",sans-serif;
-	    font-style: italic;
+        font-family: 'Poppins', sans-serif;
+        font-style: unset;
+        font-weight: 500;
+        color: #232323;
 	    font-size: 40px;
 	    line-height: 40px;
 	    margin-bottom: 25px;
@@ -482,6 +486,18 @@ figure.effect-bubba:hover p {
 4.4. Dark Short section (counters, quote, etc)
 --------------------*/
 
+.sectionComofunciona{
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px){
+    .sectionComofunciona{
+        padding-bottom: 110px;
+    }
+}
+
+
 .dark-bg {
     background: #323232;
     color: #fff;
@@ -500,7 +516,7 @@ figure.effect-bubba:hover p {
 }
 
 .overlay-dark:before, .overlay-light:before {
-    background-color: rgba(32,32,32,0.8);
+    background-color: rgba(132,206,235,0.7);
     left: 0;
     top: 0;
     position: absolute;
@@ -535,6 +551,17 @@ figure.effect-bubba:hover p {
 /*--------------------
 4.5. Partners Slider
 --------------------*/
+
+.sectionAliados{
+    margin-bottom: 10%;
+}
+
+@media (max-width: 767px){
+    .sectionAliados{
+        margin-bottom: 20%;
+    }
+}
+
 
 .partner-logo {
     height: 80px;
@@ -594,6 +621,16 @@ figure.effect-bubba:hover p {
 4.7. Contacts
 --------------------*/
 
+.sectionComentarios{
+    margin-bottom: 10%;
+}
+
+@media (max-width: 767px){
+    .sectionComentarios{
+        margin-bottom: 20%;
+    }
+}
+
 section#contact form {
     margin-top: 15px;
 }
@@ -633,11 +670,11 @@ section#contact .form-group input, section#contact .form-group textarea {
 
 footer {
     padding: 30px;
-    background-color: #0b3c5d;    
+    background-color: #5ab9ea;   
 }
 
 footer p {
-    color: #B7B7B7;
+    color: #ffffff;
     margin: 0;
     font-size: 10px;
     text-transform: uppercase;
