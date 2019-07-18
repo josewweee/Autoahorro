@@ -908,6 +908,7 @@ and (max-width : 480px) {
     width: 100%;
     font-size: 15px;
     margin: 5px 0 15px;
+    text-transform: capitalize;
 }
 
 .registration-form .form-textarea {

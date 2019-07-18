@@ -47,6 +47,13 @@
     outline: rgb(52, 52, 52) none 0px;
 }/*#DIV_1:before*/
 
+@media (min-width: 770px) and (max-width: 1199px){
+    #DIV_1{
+        margin-top: 80px !important;
+    }
+}
+
+
 #DIV_2 {
     box-sizing: border-box;
     color: rgb(52, 52, 52);
