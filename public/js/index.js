@@ -172,6 +172,7 @@ function filtrarTipos(tipo){
             var htmlMarca = document.getElementById('marca');
             var marcasNoRepetidas;
             if(opcionSeleccionada == 'carro'){
+                document.getElementById("loader").style.display = "block";
                 refTipo.child('CARROS').on('value', function(snapshot){
                     this.arregloVehiculos = Object.values(snapshot.val());
                     //eliminamos los repetidos y los ponemos en 1 arreglo
@@ -179,8 +180,10 @@ function filtrarTipos(tipo){
                     for(var i=0; i<this.arregloVehiculos.length;i++){
                         htmlMarca.innerHTML += '<option value="'+this.arregloVehiculos[i].marca+'">'+this.arregloVehiculos[i].marca+'</option>';
                     }
+                    document.getElementById("loader").style.display = "none";
                 });
             }else if (opcionSeleccionada == 'moto'){
+                document.getElementById("loader").style.display = "block";
                 var htmlMarca = document.getElementById('marca');
                 refTipo.child('MOTOS').on('value', function(snapshot){
                     this.arregloVehiculos = Object.values(snapshot.val());
@@ -189,6 +192,7 @@ function filtrarTipos(tipo){
                     for(var i=0; i<this.arregloVehiculos.length;i++){
                         htmlMarca.innerHTML += '<option value="'+this.arregloVehiculos[i].marca+'">'+this.arregloVehiculos[i].marca+'</option>';
                     }
+                    document.getElementById("loader").style.display = "none";
                 });
             }
            break;
